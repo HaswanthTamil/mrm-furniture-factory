@@ -8,6 +8,15 @@
       name="description"
       content="Precision-crafted furniture solutions for modern businesses — durable, functional, and built to perform."
     />
+
+    <meta property="og:title" content="MRM Furniture Factory" />
+    <meta
+      property="og:description"
+      content="Precision-crafted furniture solutions for modern businesses."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/scg+xml" href="./assets/mrm_logo.svg" />
     <link href="../dist/output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
@@ -16,22 +25,68 @@
   </head>
   <body>
     <header
-      class="bg-[var(--peach)] flex flex-row items-center px-8 justify-between top-0 left-0 right-0 z-50 sticky"
+      class="bg-[var(--peach)] flex flex-row items-center px-8 justify-between top-0 left-0 right-0 z-50 sticky shadow-md"
     >
       <div class="flex flex-row items-center">
         <img src="./assets/mrm_logo.svg" alt="logo" class="w-12 h-12 p-2" />
         <h1
-          class="text-3xl font-semibold tracking-wide text-center font-playfair"
+          class="text-3xl font-semibold tracking-wide text-center text-shadow font-playfair"
         >
           MRM Furniture Factory
         </h1>
       </div>
-      <nav class="flex flex-row items-center gap-4 font-playfair">
+      <nav class="flex flex-row items-center gap-8 font-playfair">
         <a class="nav-hover" href="index.html">Home</a>
         <a class="nav-hover" href="index.html#about">About Us</a>
         <a class="nav-hover" href="index.html#contact">Contact</a>
         <a class="nav-hover" href="services.html">Services</a>
       </nav>
     </header>
+    <main>
+      <section id="hero" class="flex w-full h-screen">
+        <!-- Slider Section -->
+        <div class="relative w-[90vw] max-w-xl aspect-video overflow-hidden">
+          <img
+            id="current"
+            class="absolute inset-0 w-full h-full object-cover transition-all"
+            alt="Furniture Image"
+          />
+          <img
+            id="next"
+            class="absolute inset-0 w-full h-full object-cover transition-all hidden"
+            alt="Furniture Image"
+          />
+        </div>
+
+        <!-- Texture Section -->
+        <div class="flex-1 bg-stone-300 relative overflow-hidden">
+          <!-- Image background -->
+          <img
+            src="./assets/Office/Image-4.png"
+            alt="Furniture Image"
+            class="w-full h-full object-cover opacity-40 absolute inset-0 z-0"
+          />
+
+          <!-- Text overlay -->
+          <div
+            class="relative z-10 flex flex-col items-center py-20 w-full h-full gap-y-5"
+          >
+            <h2 class="text-4xl text-white font-playfair text-shadow">
+              Design Your Dream Space
+            </h2>
+            <h3 class="text-2xl text-white font-playfair text-shadow">
+              Start Exploring
+            </h3>
+            <button
+              class="px-4 py-2 bg-stone-400/50 rounded-full shadow-md text-black font-semibold hover:translate-x-3 hover:italic transition-transform duration-300 ease-in-out"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../src/index.js"></script>
   </body>
 </html>
