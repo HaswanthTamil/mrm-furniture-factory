@@ -1,11 +1,11 @@
 const images = [
-  "/public/assets/Bedroom/image-7.png",
-  "/public/assets/Manufacturing/image-10.png",
-  "/public/assets/HomeFurnitures/image-10.png",
-  "/public/assets/Kitchen/image-6.png",
-  "/public/assets/Office/image-5.png",
-  "/public/assets/HomeFurnitures/image-9.png",
-  "/public/assets/Manufacturing/image-9.png",
+  "./assets/Bedroom/image-7.png",
+  "./assets/Manufacturing/image-10.png",
+  "./assets/HomeFurnitures/image-10.png",
+  "./assets/Kitchen/image-6.png",
+  "./assets/Office/image-5.png",
+  "./assets/HomeFurnitures/image-9.png",
+  "./assets/Manufacturing/image-9.png",
 ];
 
 let index = 0;
