@@ -73,7 +73,7 @@
     </header>
 
     <main>
-      <section id="hero" class="flex flex-col lg:flex-row w-full h-screen">
+      <section id="hero" class="flex flex-col lg:flex-row w-full lg:h-screen">
         <!-- Slider Section -->
         <div class="relative w-full lg:max-w-[50vw] aspect-video mx-auto">
           <img
@@ -122,15 +122,95 @@
         </div>
       </section>
 
-      <section id="trending" class="flex flex-col bg-[var(--peach)] w-full">
-        <h2>Trending Now</h2>
-        <div>
-          <a
-            ><img
-              src="./assets/Kitchen/Image-6.png"
-              alt="Kitchen Furniture Image"
-          /></a>
-          <span>Kitchen Furniture</span>
+      <section
+        id="trending"
+        class="flex flex-col bg-[var(--peach)] w-full px-4 py-6"
+      >
+        <h2 class="font-semibold font-playfair text-3xl py-3">Trending Now</h2>
+        <div
+          class="w-full flex flex-col sm:flex-row items-center justify-around gap-4"
+        >
+          <div
+            class="flex flex-col items-center w-[70vw] sm:w-[25vw] py-4 group"
+          >
+            <!-- Image wrapper with overlay -->
+            <a class="relative w-full aspect-square overflow-hidden rounded-xl">
+              <img
+                src="./assets/Kitchen/Image-6.png"
+                alt="Kitchen Furniture Image"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+
+              <!-- Backdrop overlay -->
+              <div
+                class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <span
+                  class="text-white text-lg font-semibold tracking-wide cursor-pointer hover:translate-x-2 hover:italic duration-200 ease-out"
+                  >View More</span
+                >
+              </div>
+            </a>
+
+            <!-- Label -->
+            <span class="text-2xl font-semibold py-3 tracking-wider"
+              >Dining Hall</span
+            >
+          </div>
+          <div
+            class="flex flex-col items-center w-[70vw] sm:w-[25vw] py-4 group"
+          >
+            <!-- Image wrapper with overlay -->
+            <a class="relative w-full aspect-square overflow-hidden rounded-xl">
+              <img
+                src="./assets/Bedroom/Image-4.png"
+                alt="Kitchen Furniture Image"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+
+              <!-- Backdrop overlay -->
+              <div
+                class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <span
+                  class="text-white text-lg font-semibold tracking-wide cursor-pointer hover:translate-x-2 hover:italic duration-200 ease-out"
+                  >View More</span
+                >
+              </div>
+            </a>
+
+            <!-- Label -->
+            <span class="text-2xl font-semibold py-3 tracking-wider"
+              >Bedroom</span
+            >
+          </div>
+          <div
+            class="flex flex-col items-center w-[70vw] sm:w-[25vw] py-4 group"
+          >
+            <!-- Image wrapper with overlay -->
+            <a class="relative w-full aspect-square overflow-hidden rounded-xl">
+              <img
+                src="./assets/Office/Image-2.png"
+                alt="Kitchen Furniture Image"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+
+              <!-- Backdrop overlay -->
+              <div
+                class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <span
+                  class="text-white text-lg font-semibold tracking-wide cursor-pointer hover:translate-x-2 hover:italic duration-200 ease-out"
+                  >View More</span
+                >
+              </div>
+            </a>
+
+            <!-- Label -->
+            <span class="text-2xl font-semibold py-3 tracking-wider"
+              >Office</span
+            >
+          </div>
         </div>
       </section>
     </main>
