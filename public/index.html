@@ -72,7 +72,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="hide-scrollbar overflow-auto">
       <section id="hero" class="flex flex-col lg:flex-row w-full lg:h-screen">
         <!-- Slider Section -->
         <div class="relative w-full lg:max-w-[50vw] aspect-video mx-auto">
@@ -114,7 +114,7 @@
               Start Exploring
             </h3>
             <button
-              class="px-6 py-2 bg-stone-400/50 rounded-full shadow-md text-black font-semibold hover:translate-x-3 hover:italic transition-transform duration-300 ease-in-out"
+              class="btn-shine px-6 py-2 bg-stone-400/50 rounded-full shadow-md text-black font-semibold hover:translate-x-3 transition-transform duration-300 ease-in-out"
             >
               Explore
             </button>
@@ -218,19 +218,23 @@
         <img src="./assets/Manufacturing/Banner.png" alt="Banner Image" />
       </section>
 
-      <section id="products" class="flex flex-col w-full bg-[var(--peach)]">
+      <section
+        id="products"
+        class="flex flex-col w-full bg-[var(--peach)] py-10"
+      >
         <div
-          class="flex flex-col sm:flex-row items-center justify-around gap-5"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center"
         >
+          <!-- Image 1 -->
           <div
-            class="flex flex-col items-center w-[70vw] sm:w-[25vw] py-4 group"
+            class="flex flex-col items-center justify-center w-[80%] mx-auto py-4 group bg-transparent"
           >
             <!-- Image wrapper with overlay -->
             <a
               class="relative w-full aspect-square overflow-hidden rounded-xl shadow-lg"
             >
               <img
-                src="./assets/Office/Image-2.png"
+                src="./assets/products/livingroom.png"
                 alt="Kitchen Furniture Image"
                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
@@ -247,11 +251,157 @@
             </a>
 
             <!-- Label -->
-            <span class="text-2xl font-semibold py-3 tracking-wider"
+            <span class="text-2xl font-playfair py-3 tracking-wider"
               >Living Room</span
             >
           </div>
-          Our Products
+
+          <!-- Image 2 -->
+          <div
+            class="flex flex-col items-center w-[70vw] sm:w-[25vw] py-4 group mx-auto"
+          >
+            <!-- Image wrapper with overlay -->
+            <a
+              class="relative w-full aspect-square overflow-hidden rounded-xl shadow-lg"
+            >
+              <img
+                src="./assets/products/kidsroom.png"
+                alt="Kitchen Furniture Image"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+
+              <!-- Backdrop overlay -->
+              <div
+                class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <span
+                  class="text-white text-lg font-semibold tracking-wide cursor-pointer hover:translate-x-2 hover:italic duration-200 ease-out"
+                  >View More</span
+                >
+              </div>
+            </a>
+
+            <!-- Label -->
+            <span class="text-2xl font-playfair py-3 tracking-wider"
+              >Kids Room</span
+            >
+          </div>
+
+          <!-- Description -->
+          <div class="w-full h-full px-4 flex flex-col items-center mx-auto">
+            <span class="text-3xl font-playfair pb-2">Our Products</span>
+            <hr class="w-1/2 h-[2px] bg-black" />
+            <p class="py-2 text-[var(--maroon)] font-playfair">
+              Take a look at our varieties of products
+            </p>
+            <p class="py-2 text-justify tracking-tighter">
+              All our furniture is designed and manufactured in-house at our
+              modern factory. This allows us to maintain complete control over
+              quality, materials, and craftsmanship. From measurements to final
+              finish, every piece is customized to suit your space, style, and
+              needs — ensuring perfect fit, smooth detailing, and long-lasting
+              durability.
+            </p>
+            <button
+              class="btn-shine bg-stone-200 shadow-lg font-playfair text-[var(--maroon)] border-2 border-[var(--maroon)] px-4 py-1 rounded-xl hover:translate-x-3 transition-transform duration-300 ease-in-out"
+            >
+              Explore
+            </button>
+          </div>
+
+          <!-- Second Row on PC -->
+          <!-- Image 1 -->
+          <div
+            class="flex flex-col items-center w-[70vw] sm:w-[25vw] py-4 group mx-auto"
+          >
+            <!-- Image wrapper with overlay -->
+            <a
+              class="relative w-full aspect-square overflow-hidden rounded-xl shadow-lg"
+            >
+              <img
+                src="./assets/products/falseceiling.png"
+                alt="Kitchen Furniture Image"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+
+              <!-- Backdrop overlay -->
+              <div
+                class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <span
+                  class="text-white text-lg font-semibold tracking-wide cursor-pointer hover:translate-x-2 hover:italic duration-200 ease-out"
+                  >View More</span
+                >
+              </div>
+            </a>
+
+            <!-- Label -->
+            <span class="text-2xl font-playfair py-3 tracking-wider"
+              >False Ceiling</span
+            >
+          </div>
+
+          <!-- Image 2 -->
+          <div
+            class="flex flex-col items-center w-[70vw] sm:w-[25vw] py-4 group mx-auto"
+          >
+            <!-- Image wrapper with overlay -->
+            <a
+              class="relative w-full aspect-square overflow-hidden rounded-xl shadow-lg"
+            >
+              <img
+                src="./assets/products/wardrobe.png"
+                alt="Kitchen Furniture Image"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+
+              <!-- Backdrop overlay -->
+              <div
+                class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <span
+                  class="text-white text-lg font-semibold tracking-wide cursor-pointer hover:translate-x-2 hover:italic duration-200 ease-out"
+                  >View More</span
+                >
+              </div>
+            </a>
+
+            <!-- Label -->
+            <span class="text-2xl font-playfair py-3 tracking-wider"
+              >Wardrobe</span
+            >
+          </div>
+
+          <!-- Image 3 -->
+          <div
+            class="flex flex-col items-center w-[70vw] sm:w-[25vw] py-4 group mx-auto"
+          >
+            <!-- Image wrapper with overlay -->
+            <a
+              class="relative w-full aspect-square overflow-hidden rounded-xl shadow-lg"
+            >
+              <img
+                src="./assets/products/tvunit.png"
+                alt="Kitchen Furniture Image"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+
+              <!-- Backdrop overlay -->
+              <div
+                class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <span
+                  class="text-white text-lg font-semibold tracking-wide cursor-pointer hover:translate-x-2 hover:italic duration-200 ease-out"
+                  >View More</span
+                >
+              </div>
+            </a>
+
+            <!-- Label -->
+            <span class="text-2xl font-playfair py-3 tracking-wider"
+              >TV Unit</span
+            >
+          </div>
         </div>
       </section>
     </main>
