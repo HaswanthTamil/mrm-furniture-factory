@@ -40,7 +40,7 @@
       <!-- Hamburger Icon (Mobile only) -->
       <button
         id="hamburgerBtn"
-        class="sm:hidden flex flex-col justify-between w-6 h-5 focus:outline-none"
+        class="md:hidden flex flex-col justify-between w-6 h-5 focus:outline-none"
       >
         <span class="h-1 bg-black rounded"></span>
         <span class="h-1 bg-black rounded"></span>
@@ -48,7 +48,7 @@
       </button>
 
       <!-- Desktop Nav -->
-      <nav class="hidden sm:flex flex-row items-center gap-8 font-playfair">
+      <nav class="hidden md:flex flex-row items-center gap-8 font-playfair">
         <a class="nav-hover" href="index.html">Home</a>
         <a class="nav-hover" href="index.html#about">About Us</a>
         <a class="nav-hover" href="index.html#contact">Contact</a>
@@ -73,9 +73,9 @@
     </header>
 
     <main>
-      <section id="hero" class="flex flex-col sm:flex-row w-full h-screen">
+      <section id="hero" class="flex flex-col lg:flex-row w-full h-screen">
         <!-- Slider Section -->
-        <div class="relative w-full sm:w-[90vw] max-w-xl aspect-video mx-auto">
+        <div class="relative w-full lg:max-w-[50vw] aspect-video mx-auto">
           <img
             id="current"
             class="absolute inset-0 w-full h-full object-cover transition-all"
@@ -90,7 +90,7 @@
 
         <!-- Texture Section -->
         <div
-          class="flex-1 bg-stone-300 relative overflow-hidden py-12 sm:py-20 max-h-[30vh] sm:min-h-full"
+          class="flex-1 bg-stone-300 relative overflow-hidden py-12 md:py-20 max-h-[30vh] lg:min-h-full"
         >
           <!-- Image background -->
           <img
@@ -101,15 +101,15 @@
 
           <!-- Text overlay -->
           <div
-            class="relative z-10 flex flex-col items-center justify-center py-2 sm:py-20 px-4 w-full h-full gap-y-5 -mt-10"
+            class="relative z-10 flex flex-col items-center justify-center py-2 ;g:py-20 px-4 w-full h-full gap-y-5 -mt-10"
           >
             <h2
-              class="text-3xl sm:text-4xl text-white font-playfair text-shadow text-center"
+              class="text-3xl md:text-4xl text-white font-playfair text-shadow text-center"
             >
               Design Your Dream Space
             </h2>
             <h3
-              class="text-xl sm:text-2xl text-white font-playfair text-shadow text-center"
+              class="text-xl md:text-2xl text-white font-playfair text-shadow text-center"
             >
               Start Exploring
             </h3>
