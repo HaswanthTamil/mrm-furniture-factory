@@ -25,27 +25,57 @@
   </head>
   <body>
     <header
-      class="bg-[var(--peach)] flex flex-row items-center px-8 justify-between top-0 left-0 right-0 z-50 sticky shadow-md"
+      class="bg-[var(--peach)] flex items-center px-6 py-3 justify-between sticky top-0 z-50 shadow-md"
     >
-      <div class="flex flex-row items-center">
-        <img src="./assets/mrm_logo.svg" alt="logo" class="w-12 h-12 p-2" />
+      <!-- Logo + Title -->
+      <div class="flex items-center gap-2">
+        <img src="./assets/mrm_logo.svg" alt="logo" class="w-10 h-10 p-1" />
         <h1
-          class="text-3xl font-semibold tracking-wide text-center text-shadow font-playfair"
+          class="text-xl sm:text-2xl font-semibold tracking-wide text-shadow font-playfair"
         >
           MRM Furniture Factory
         </h1>
       </div>
-      <nav class="flex flex-row items-center gap-8 font-playfair">
+
+      <!-- Hamburger Icon (Mobile only) -->
+      <button
+        id="hamburgerBtn"
+        class="sm:hidden flex flex-col justify-between w-6 h-5 focus:outline-none"
+      >
+        <span class="h-1 bg-black rounded"></span>
+        <span class="h-1 bg-black rounded"></span>
+        <span class="h-1 bg-black rounded"></span>
+      </button>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden sm:flex flex-row items-center gap-8 font-playfair">
         <a class="nav-hover" href="index.html">Home</a>
         <a class="nav-hover" href="index.html#about">About Us</a>
         <a class="nav-hover" href="index.html#contact">Contact</a>
         <a class="nav-hover" href="services.html">Services</a>
       </nav>
+
+      <!-- Mobile Slide-in Nav -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 left-0 h-full w-64 bg-[var(--peach)] shadow-lg z-[60] transform -translate-x-full transition-transform duration-300 ease-in-out sm:hidden"
+      >
+        <div class="flex justify-end p-4">
+          <button id="closeMenu" class="text-2xl font-bold">&times;</button>
+        </div>
+        <ul class="flex flex-col gap-6 p-6 font-playfair text-lg">
+          <li><a class="nav-hover" href="index.html">Home</a></li>
+          <li><a class="nav-hover" href="index.html#about">About Us</a></li>
+          <li><a class="nav-hover" href="index.html#contact">Contact</a></li>
+          <li><a class="nav-hover" href="services.html">Services</a></li>
+        </ul>
+      </div>
     </header>
+
     <main>
-      <section id="hero" class="flex w-full h-screen">
+      <section id="hero" class="flex flex-col sm:flex-row w-full h-screen">
         <!-- Slider Section -->
-        <div class="relative w-[90vw] max-w-xl aspect-video overflow-hidden">
+        <div class="relative w-full sm:w-[90vw] max-w-xl aspect-video mx-auto">
           <img
             id="current"
             class="absolute inset-0 w-full h-full object-cover transition-all"
@@ -59,7 +89,9 @@
         </div>
 
         <!-- Texture Section -->
-        <div class="flex-1 bg-stone-300 relative overflow-hidden">
+        <div
+          class="flex-1 bg-stone-300 relative overflow-hidden py-12 sm:py-20 max-h-[30vh] sm:min-h-full"
+        >
           <!-- Image background -->
           <img
             id="texture_hero"
@@ -69,22 +101,28 @@
 
           <!-- Text overlay -->
           <div
-            class="relative z-10 flex flex-col items-center py-20 w-full h-full gap-y-5"
+            class="relative z-10 flex flex-col items-center justify-center py-2 sm:py-20 px-4 w-full h-full gap-y-5 -mt-10"
           >
-            <h2 class="text-4xl text-white font-playfair text-shadow">
+            <h2
+              class="text-3xl sm:text-4xl text-white font-playfair text-shadow text-center"
+            >
               Design Your Dream Space
             </h2>
-            <h3 class="text-2xl text-white font-playfair text-shadow">
+            <h3
+              class="text-xl sm:text-2xl text-white font-playfair text-shadow text-center"
+            >
               Start Exploring
             </h3>
             <button
-              class="px-4 py-2 bg-stone-400/50 rounded-full shadow-md text-black font-semibold hover:translate-x-3 hover:italic transition-transform duration-300 ease-in-out"
+              class="px-6 py-2 bg-stone-400/50 rounded-full shadow-md text-black font-semibold hover:translate-x-3 hover:italic transition-transform duration-300 ease-in-out"
             >
               Explore
             </button>
           </div>
         </div>
       </section>
+
+      <section id="trending" class="flex flex-row items-center"></section>
     </main>
 
     <script src="./scripts/index.js"></script>

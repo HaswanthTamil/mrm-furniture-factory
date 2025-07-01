@@ -1,3 +1,26 @@
+// Responsive Header
+
+const hamburgerBtn = document.getElementById("hamburgerBtn")
+const mobileMenu = document.getElementById("mobileMenu")
+const closeMenu = document.getElementById("closeMenu")
+
+hamburgerBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("-translate-x-full")
+})
+
+closeMenu.addEventListener("click", () => {
+  mobileMenu.classList.add("-translate-x-full")
+})
+
+// Close on outside click
+window.addEventListener("click", (e) => {
+  if (!mobileMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+    mobileMenu.classList.add("-translate-x-full")
+  }
+})
+
+// Image Slider
+
 const prefix = location.hostname === "localhost" ? "" : "."
 
 const images = [
