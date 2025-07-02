@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MRM Furniture Factory</title>
+    <meta
+      name="description"
+      content="Precision-crafted furniture solutions for modern businesses — durable, functional, and built to perform."
+    />
+
+    <meta property="og:title" content="MRM Furniture Factory" />
+    <meta
+      property="og:description"
+      content="Precision-crafted furniture solutions for modern businesses."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/scg+xml" href="./assets/mrm_logo.svg" />
+    <link href="./styles/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="bg-[var(--peach)] flex items-center px-6 py-3 justify-between sticky top-0 z-50 shadow-md"
+    >
+      <!-- Logo + Title -->
+      <div class="flex items-center gap-2">
+        <img src="./assets/mrm_logo.svg" alt="logo" class="w-10 h-10 p-1" />
+        <h1
+          class="text-xl sm:text-2xl font-semibold tracking-wide text-shadow font-playfair"
+        >
+          MRM Furniture Factory
+        </h1>
+      </div>
+
+      <!-- Hamburger Icon (Mobile only) -->
+      <button
+        id="hamburgerBtn"
+        class="md:hidden flex flex-col justify-between w-6 h-5 focus:outline-none"
+      >
+        <span class="h-1 bg-black rounded"></span>
+        <span class="h-1 bg-black rounded"></span>
+        <span class="h-1 bg-black rounded"></span>
+      </button>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex flex-row items-center gap-8 font-playfair">
+        <a class="nav-hover" href="index.html">Home</a>
+        <a class="nav-hover" href="index.html#about">About Us</a>
+        <a class="nav-hover" href="index.html#contact">Contact</a>
+        <a class="nav-hover" href="explore.html">Explore</a>
+      </nav>
+
+      <!-- Mobile Slide-in Nav -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 left-0 h-full w-64 bg-[var(--peach)] shadow-lg z-[60] transform -translate-x-full transition-transform duration-300 ease-in-out sm:hidden"
+      >
+        <div class="flex justify-end p-4">
+          <button id="closeMenu" class="text-2xl font-bold">&times;</button>
+        </div>
+        <ul class="flex flex-col gap-6 p-6 font-playfair text-lg">
+          <li><a class="nav-hover" href="index.html">Home</a></li>
+          <li><a class="nav-hover" href="index.html#about">About Us</a></li>
+          <li><a class="nav-hover" href="index.html#contact">Contact</a></li>
+          <li><a class="nav-hover" href="explore.html">Explore</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer>
+      <div
+        class="w-full flex bg-white px-4 md:px-10 py-6 flex-col md:flex-row gap-4 justify-between"
+      >
+        <!-- Left Logo section -->
+        <div>
+          <div
+            class="flex flex-row items-center text-xl font-semibold font-playfair"
+          >
+            <img src="./assets/mrm_logo.svg" /> MRM Furniture Factory
+          </div>
+          <div class="text-gray-700/80 text-sm">
+            Plot No. 17B, 17B1B, 17B1C,<br />
+            North Phase, Sidco Industrial Estate,<br />
+            Ambattur, Chennai - 600 098.
+          </div>
+        </div>
+
+        <!-- Right contact section -->
+        <div class="flex flex-col md:flex-row gap-x-10">
+          <!-- Contact -->
+          <div>
+            <span class="font-semibold">Contact Us</span>
+            <p class="text-sm text-gray-700/70">
+              +91 9600500655<br />+91 9445112222
+            </p>
+          </div>
+
+          <!-- Follow Us -->
+          <div>
+            <span class="font-semibold">Follow Us</span>
+            <div class="text-sm text-gray-700/70 flex flex-col">
+              <a>Facebook</a>
+              <a>Instagram</a>
+              <a>YouTube</a>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div>
+            <span class="font-semibold">Links</span>
+            <div class="text-sm text-gray-700/70 flex flex-col">
+              <a href="index.html">Home</a>
+              <a>Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
