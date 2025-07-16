@@ -51,8 +51,9 @@
       <nav class="hidden md:flex flex-row items-center gap-8 font-playfair">
         <a class="nav-hover" href="index.html">Home</a>
         <a class="nav-hover" href="index.html#about">About Us</a>
-        <a class="nav-hover" href="explore.html#footer">Contact</a>
+        <a class="nav-hover" href="index.html#footer">Contact</a>
         <a class="nav-hover" href="explore.html">Explore</a>
+        <a class="nav-hover" href="projects.html">Projects</a>
       </nav>
 
       <!-- Mobile Slide-in Nav -->
@@ -66,8 +67,13 @@
         <ul class="flex flex-col gap-6 p-6 font-playfair text-lg">
           <li><a class="nav-hover" href="index.html">Home</a></li>
           <li><a class="nav-hover" href="index.html#about">About Us</a></li>
-          <li><a class="nav-hover" href="explore.html#footer">Contact</a></li>
-          <li><a class="nav-hover" href="explore.html">Explore</a></li>
+          <li><a class="nav-hover" href="index.html#footer">Contact</a></li>
+          <li>
+            <a class="nav-hover" href="explore.html">Explore</a>
+          </li>
+          <li>
+            <a class="nav-hover" href="projects.html">Projects</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -556,18 +562,20 @@
           <!-- Contact -->
           <div>
             <span class="font-semibold">Contact Us</span>
-            <p class="text-sm text-gray-700/70">
-              +91 9600500655<br />+91 9445112222
-            </p>
+            <p class="text-sm text-gray-700/70">+91 9600500655<br /></p>
           </div>
 
           <!-- Follow Us -->
           <div>
             <span class="font-semibold">Follow Us</span>
             <div class="text-sm text-gray-700/70 flex flex-col">
-              <a>Facebook</a>
-              <a>Instagram</a>
-              <a>YouTube</a>
+              <a href="https://www.facebook.com/profile.php?id=61578233786786"
+                >Facebook</a
+              >
+              <a href="https://www.instagram.com/mrmfurniturefactory/"
+                >Instagram</a
+              >
+              <a href="https://x.com/mrmfurnitures">Twitter</a>
             </div>
           </div>
 
@@ -577,6 +585,7 @@
             <div class="text-sm text-gray-700/70 flex flex-col">
               <a href="index.html">Home</a>
               <a href="explore.html">Explore</a>
+              <a href="projects.html">Projects</a>
             </div>
           </div>
         </div>
@@ -584,14 +593,14 @@
     </footer>
     <script>
       function openPopup(src) {
-        const popup = document.getElementById("popup")
-        const img = document.getElementById("popup-img")
-        img.src = src
-        popup.classList.remove("hidden")
+        const popup = document.getElementById("popup");
+        const img = document.getElementById("popup-img");
+        img.src = src;
+        popup.classList.remove("hidden");
       }
 
       function closePopup() {
-        document.getElementById("popup").classList.add("hidden")
+        document.getElementById("popup").classList.add("hidden");
       }
     </script>
   </body>
